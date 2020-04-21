@@ -1,0 +1,135 @@
+<nav class="navbar navbar-dark bg-dark">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+		<a class="navbar-brand" href="#">Hidden brand</a>
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			</li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	</div>
+</nav>
+
+
+<div class="container" style="width: 1500px;">
+	<div align="center" style="padding-top: 60px;">
+		<h2 style="color: #ce4541; font-family: 'Arial',serif">SHOP XE MÁY</h2>
+	</div>
+	<div align="right">
+		<button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#exampleModal1"><span
+      class="glyphicon glyphicon-pencil">Thêm</span></button>
+	</div>
+	<br>
+
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table" style="align-items: center">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">STT</th>
+						<th scope="col">Ảnh</th>
+						<th scope="col">Tên</th>
+						<th scope="col">Giá</th>
+						<th scope="col">Địa chỉ</th>
+						<th scope="col" colspan="2">Chức năng</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let pr of productALL;index as i">
+						<th scope="row">{{i + 1}}</th>
+						<td><img src="{{pr.img}}" width="70px" height="80px"></td>
+						<td>{{pr.name}}</td>
+						<td>{{pr.price}}</td>
+						<td>{{pr.name}}</td>
+						<td>
+							<button class="btn btn-primary btn-xs" ><span
+              class="glyphicon glyphicon-pencil">Xóa</span></button>
+						</td>
+						<td>
+							<button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#exampleModal" >
+              <span class="glyphicon glyphicon-trash">Chi tiết</span></button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<BR>
+  </div>
+	</div>
+
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i
+            class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="javascript:void();"
+								target="_blank"><i class="fa fa-envelope"></i></a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a
+						Registered
+						MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com"
+							target="_blank">Sunlimetech</a></p>
+				</div>
+
+			</div>
+		</div>
+	</section>
